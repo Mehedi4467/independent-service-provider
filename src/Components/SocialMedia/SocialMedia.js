@@ -9,7 +9,7 @@ const SocialMedia = () => {
         console.log(user)
     }
     return (
-        <div onClick={() => signInWithGoogle()} className="w-50 mx-auto py-1 rounded-pill d-flex align-items-center btn-primary mt-5 btn justify-content-center">
+        <div onClick={() => signInWithGoogle()} className="w-50 mx-auto py-1 rounded-pill d-flex align-items-center btn-primary mt-4 btn justify-content-center">
             {
                 loading && <div class="spinner-grow" role="status">
                     <span class="visually-hidden">Loading...</span>
