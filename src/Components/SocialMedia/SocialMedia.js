@@ -4,7 +4,7 @@ import google from '../../images/google.png';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 const SocialMedia = () => {
 
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, user, loading] = useSignInWithGoogle(auth);
     if (user) {
         console.log(user)
     }

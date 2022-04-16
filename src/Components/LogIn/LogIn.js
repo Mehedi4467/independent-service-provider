@@ -3,7 +3,11 @@ import { Button, Col, Form, Row } from 'react-bootstrap';
 import './LogIn.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
 
+
+
+
 const LogIn = () => {
+
     return (
         <Form>
             <div className='w-50 mx-auto mt-5 shadow-lg p-5 rounded'>
