@@ -46,7 +46,7 @@ const Registration = () => {
                 <p className='text-center my-4 text-danger'>{error && error?.message}</p>
                 <Form.Group as={Row} className="mb-3 d-flex justify-content-center" controlId="formPlaintextName">
                     <Col sm="10">
-                        <Form.Control type="text" name='name' placeholder="Your Name" />
+                        <Form.Control type="text" name='name' placeholder="Your Name" required />
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} className="mb-3 d-flex justify-content-center" controlId="formPlaintextEmail">

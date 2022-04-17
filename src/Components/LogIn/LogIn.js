@@ -36,8 +36,11 @@ const LogIn = () => {
     }
 
     const resetPassword = async () => {
-        await sendPasswordResetEmail(resetEmail);
-        toast('Email Send');
+        if (resetEmail !== '') {
+            await sendPasswordResetEmail(resetEmail);
+            toast('Email Send');
+        }
+
     }
 
     return (
