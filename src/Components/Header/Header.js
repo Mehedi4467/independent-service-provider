@@ -21,14 +21,14 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
-                        className="mx-auto my-2 my-lg-0"
+                        className="mx-auto my-2 my-lg-0 "
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
 
-                        <Nav.Link className="text-uppercase" as={CustomLink} to='/'>Home</Nav.Link>
-                        <Nav.Link className="text-uppercase" as={CustomLink} to='/blogs'>Blogs</Nav.Link>
-                        <Nav.Link className="text-uppercase" as={CustomLink} to='/about'>About</Nav.Link>
+                        <Nav.Link className="text-uppercase " as={CustomLink} to='/'>Home</Nav.Link>
+                        <Nav.Link className="text-uppercase px-md-5" as={CustomLink} to='/blogs'>Blogs</Nav.Link>
+                        <Nav.Link className="text-uppercase pe-md-5" as={CustomLink} to='/about'>About</Nav.Link>
 
                         {
                             user ? <Nav.Link className="text-uppercase" onClick={() => signOut(auth)} >Log Out</Nav.Link>
