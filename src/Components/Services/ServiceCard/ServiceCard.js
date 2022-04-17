@@ -1,7 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
-    const { image, name, price } = service;
+    const { id, image, name, price } = service;
+    const navigate = useNavigate();
+    const navigateToService = (id) => {
+        navigate(`/services/${id}`);
+    }
     return (
         <div className='col'>
             <div className="card h-100 shadow">
@@ -12,7 +17,7 @@ const ServiceCard = ({ service }) => {
                     <p className="card-text text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div className="mt-3">
-                    <button className='w-100 btn btn-primary'>Buy Now</button>
+                    <button onClick={() => navigateToService(id)} className='w-100 btn btn-primary'>Buy Now</button>
                 </div>
             </div>
         </div>
