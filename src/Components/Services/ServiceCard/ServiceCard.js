@@ -17,7 +17,7 @@ const ServiceCard = ({ service }) => {
                     <p className="card-text text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div className="mt-3">
-                    <button onClick={() => navigateToService(id)} className='w-100 btn btn-primary'>Buy Now</button>
+                    <button onClick={() => navigateToService(id)} className='w-100 btn btn-primary'>Check Out</button>
                 </div>
             </div>
         </div>
