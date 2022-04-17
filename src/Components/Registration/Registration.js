@@ -4,8 +4,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialMedia from '../SocialMedia/SocialMedia';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const Registration = () => {
     const [agree, setAgree] = useState(false);
@@ -30,7 +29,7 @@ const Registration = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        toast('Creating Your Account');
+
         navigate('/');
 
 
@@ -98,7 +97,7 @@ const Registration = () => {
             <div>
                 <SocialMedia></SocialMedia>
             </div>
-            <ToastContainer />
+
         </div>
     );
 };
