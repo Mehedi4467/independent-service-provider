@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useServices from '../../hooks/useServices';
-import UserHookForm from '../UserHookForm/UserHookForm';
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 
 
 
@@ -11,17 +12,31 @@ const Checkout = () => {
     const [services] = useServices();
 
     const singleService = services.find(service => service.id === serviceId);
-    console.log(singleService);
 
-
+    const { register } = useForm();
+    const [confirmation, setConfirmation] = useState('');
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setConfirmation("Thank you for the booking.");
+    }
     return (
         <div className='container mt-3'>
             <div className='row justify-content-center align-items-center'>
-
+                <h1 className='text-center text-primary'>{confirmation}</h1>
                 <div className='col-12 col-md-6 '>
                     <h3 className='text-primary text-center my-5'>Check Out Form</h3>
                     <div className='shadow p-4 rounded-3'>
-                        <UserHookForm></UserHookForm>
+                        <form onSubmit={handleSubmit}>
+                            <div className=''>
+                                <input type="text" placeholder="Name" {...register("Name", { required: true, maxLength: 80 })} className="form-control mb-4" required />
+                                <input type="text" placeholder="Email" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} className="form-control mb-4" required />
+                                <input type="tel" placeholder="Mobile Number" {...register("Mobile number", { required: true, minLength: 6, maxLength: 12 })} className="form-control mb-4" required />
+                                <input type="text" placeholder="Address" {...register("Address", { required: true, maxLength: 81 })} className="form-control mb-4" required />
+
+                            </div>
+
+                            <input className='btn btn-primary w-100' type="submit" value="Booking" />
+                        </form>
                     </div>
                 </div>
                 <div className='col-12 col-md-5 ms-auto'>
