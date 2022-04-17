@@ -1,0 +1,22 @@
+.banner-body{
+    position: relative;
+}
+
+.banner-item{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+}
+
+.name{
+    font-size: 50px;
+    color: orange;
+}
+
+.social-icon i{
+font-size: 20px;
+}
+
+.social-icon i:hover{
+    color: orange;
+}

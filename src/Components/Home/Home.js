@@ -4,9 +4,9 @@ import Banner from './Banner/Banner';
 
 const Home = () => {
     return (
-        <div className='mt-5 container'>
+        <div className=''>
             <Banner></Banner>
-            <Services></Services>
+            <div className='container'><Services></Services></div>
         </div>
     );
 };
