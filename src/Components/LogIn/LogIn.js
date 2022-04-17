@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import './LogIn.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { async } from '@firebase/util';
@@ -22,6 +22,9 @@ const LogIn = () => {
     const [sendPasswordResetEmail, sending, resetEmailError] = useSendPasswordResetEmail(auth);
     const [resetEmail, setResetEmail] = useState('');
 
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+
     const handelSignInEmailAndPassword = (event) => {
         event.preventDefault();
         const email = event.target.email.value;
@@ -31,8 +34,9 @@ const LogIn = () => {
 
     }
 
+
     if (user) {
-        navigate('/');
+        navigate(from, { replace: true });
     }
 
     const resetPassword = async () => {

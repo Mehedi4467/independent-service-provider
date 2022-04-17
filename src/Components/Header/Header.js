@@ -27,7 +27,7 @@ const Header = () => {
                     >
 
                         <Nav.Link className="text-uppercase" as={CustomLink} to='/'>Home</Nav.Link>
-                        <Nav.Link className="text-uppercase" href="#action2">Services</Nav.Link>
+                        <Nav.Link className="text-uppercase" as={CustomLink} to='/services'>Services</Nav.Link>
                         <Nav.Link href="#action2">About</Nav.Link>
                         {
                             user ? <Nav.Link className="text-uppercase" onClick={() => signOut(auth)} >Log Out</Nav.Link>

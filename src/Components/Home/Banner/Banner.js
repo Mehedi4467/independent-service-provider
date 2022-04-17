@@ -21,7 +21,7 @@ const Banner = () => {
                     <img src={banner} alt="" />
                 </div>
                 <div className='text-white d-none d-md-block'>
-                    <h2>Hi <br></br> <span className=' name'>I am Jhone</span> </h2>
+                    <h2>Hi <br></br> <span className=' name'>I am Will Jhone</span> </h2>
                     <p>body building Trainer</p>
                     <div className='d-flex mt-4 w-50 justify-content-between social-icon'>
                         <i className="fa-brands fa-facebook"></i>
