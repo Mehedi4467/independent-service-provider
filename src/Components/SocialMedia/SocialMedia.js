@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import auth from '../../firebase.init';
 import google from '../../images/google.png';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
