@@ -11,9 +11,9 @@ const LogIn = () => {
 
     return (
         <Form>
-            <div className='w-50 mx-auto mt-5 shadow-lg p-5 rounded'>
+            <div className='col-md-6 col-12  mx-auto mt-5 shadow-lg p-5 rounded'>
                 <h2 className='mb-4 text-center text-primary'>Welcome to Log In</h2>
-                <Form.Group as={Row} className="mb-3 d-flex justify-content-center" controlId="formPlaintextPassword">
+                <Form.Group as={Row} className="mb-3 d-flex justify-content-center" controlId="formPlaintextEmail">
 
                     <Col sm="10">
                         <Form.Control type="email" placeholder="Your Email" />
