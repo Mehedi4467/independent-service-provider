@@ -5,7 +5,9 @@ import bkash from '../../images/bkash.svg';
 import visa from '../../images/visa.png';
 import masterCard from '../../images/masterCard.png';
 
+
 const Footer = () => {
+
     return (
         <div className='bg-light mt-5'>
             <div className='container p-4'>
