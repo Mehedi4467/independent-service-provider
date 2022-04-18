@@ -1,6 +1,8 @@
 # Gym Zone
 
-Live Website Link  [Gym Zone](https://github.com/facebook/create-react-app).
+Live Website Link  [Gym Zone](https://github.com/facebook/create-react-app).\
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## features and functionality
 
@@ -17,5 +19,6 @@ The React library has been used in the gym zone\
 Used in Firebase for authentication\
 React bootstrap is used. Ordinary bootstrap and react bootstrap are mainly used here\
 React form hooks have been used\
-The data is shown on the website by json loading the data
+The data is shown on the website by json loading the data\
+Use React router hook.
 
