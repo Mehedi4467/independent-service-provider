@@ -6,10 +6,12 @@ import banner from '../../../images/banner.png';
 
 var sectionStyle = {
     width: '100%',
-    minHeight: "600px",
+    height: "600px",
     backgroundImage: "url(" + (bannerBg) + ")",
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
     backgroundSize: '100% 100%'
+
 };
 
 const Banner = () => {

@@ -21,3 +21,10 @@ cursor: pointer;
 .social-icon i:hover{
     color: orange;
 }
+
+@media screen and (min-width:200px) and (max-width:500px) {
+    .banner-body {
+      
+      height: 400px!important;
+    }
+  }
