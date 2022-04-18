@@ -4,9 +4,6 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
 
-
-
-
 const Checkout = () => {
     const { serviceId } = useParams();
     const [services] = useServices();
@@ -43,7 +40,10 @@ const Checkout = () => {
 
                     <div className='shadow rounded-3 p-4 mt-3'>
                         <img className='img-fluid shadow rounded-3 ms-auto' src={singleService?.image} alt={singleService?.name} />
-                        <p style={{ fontSize: '15px', color: 'orange' }} className='shadow rounded-pill p-3 mt-2 text-center'>Price : ${singleService?.price}</p>
+                        <div className='shadow rounded-pill pt-3 my-3 text-center d-flex justify-content-evenly '>
+                            <p style={{ fontSize: '15px', color: 'orange' }} >{singleService?.name}</p>
+                            <p style={{ fontSize: '15px', color: 'orange' }} >Price : ${singleService?.price}</p>
+                        </div>
                         <p className='shadow rounded-3 p-3 text-muted'>{singleService?.discription}</p>
                     </div>
                 </div>

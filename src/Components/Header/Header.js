@@ -36,7 +36,7 @@ const Header = () => {
                         }
 
                     </Nav>
-                    <div className="d-flex align-items-center">
+                    <div className={`d-flex align-items-center justify-content-center  p-2 rounded-pill ${user && 'shadow'}`}>
                         {
                             user?.photoURL ? <img src={user?.photoURL} height='40' width='40' className="rounded-circle" alt="" />
                                 : <img src={userLogo} height='40' width='40' className="rounded-circle" alt="" />

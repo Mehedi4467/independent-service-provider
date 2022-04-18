@@ -13,27 +13,27 @@ const Footer = () => {
             <div className='container p-4'>
                 <div className='row'>
                     <div className='col-6 col-md-3 d-flex align-items-center'>
-                        <h2 className='text-primary'>Gym Zone</h2>
+                        <h3 className='text-primary shadow p-4 rounded-pill'>Gym Zone</h3>
                     </div>
-                    <div className='col-6 col-md-3 quickLink'>
+                    <div className='col-6 col-md-3 quickLink text-center '>
                         <h5>Quick Link</h5>
 
                         <Link to="/">Home</Link>
-                        <Link to="/">Services</Link>
-                        <Link to="/">Log In</Link>
-                        <Link to="/">About</Link>
+                        <Link to="/blogs">Blogs</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/login">Log In</Link>
                     </div>
-                    <div className='col-6 col-md-3'>
+                    <div className='col-6 col-md-3  mt-3 mt-md-0'>
                         <h5>Contact Us</h5>
                         <div className='d-flex align-items-center'>
                             <div>
-                                <p><b>Address :</b> Shewrapara Mirpur 10</p>
-                                <p><b>Phone :</b> 01784452434</p>
+                                <p className='p-0 m-0'><b>Address :</b> Shewrapara Mirpur 10</p>
+                                <p className='p-0 my-1'><b>Phone :</b> 01784452434</p>
                                 <p><b>Email :</b> gymzom@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <div className='col-6 col-md-3'>
+                    <div className='col-6 col-md-3 mt-3 mt-md-0'>
                         <h5>Payment Method</h5>
                         <div className='d-flex align-items-center'>
 

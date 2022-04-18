@@ -18,7 +18,7 @@ const Banner = () => {
         <div className='banner-body' style={sectionStyle}>
             <div className='banner-item  d-flex align-items-center'>
                 <div>
-                    <img src={banner} alt="" />
+                    <img className='img-fluid' src={banner} alt="" />
                 </div>
                 <div className='text-white d-none d-md-block'>
                     <h2>Hi <br></br> <span className=' name'>I am Will Jhone</span> </h2>
