@@ -1,8 +1,8 @@
 # Gym Zone
 
-Live Website Link  [Gym Zone](https://github.com/facebook/create-react-app).\
+Live Website Link  [Gym Zone](https://gym-zone-82f25.web.app/).
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://gym-zone-82f25.web.app/](https://gym-zone-82f25.web.app/) to view it in your browser.
 
 ## features and functionality
 
